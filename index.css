@@ -209,3 +209,8 @@ width: auto;
 .dark-mode .resumeBorder a:hover{
  border-color: rgb(38, 83, 208);
 }
+
+
+.dark-mode #contactForm input{
+  color: #000;
+}
