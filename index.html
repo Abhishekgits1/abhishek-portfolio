@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Home Section -->
+    <section id="home" class="border-b-4 border-solid border-black  mb-5" data-aos="fade-right" data-aos-offset="500"
+        data-aos-easing="ease-in-sine" data-aos-duration="1900">
+        <div class="">
+            <div class="text-center">
+                <span class="cursive text-2xl">itz Abhishek</span>
+            </div>
+            <header class="absolute inset-x-0 top-0 z-50">
+                <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                    <div class="flex lg:flex-1">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img id="logo" class="h-28 w-auto brightness-0" src="logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- MenuOpen -->
+                    <div class="flex lg:hidden openMenu">
+                        <button type="button" id="openMenuButton"
+                            class="-m-2.5 inline-flex items-center justify-center  rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden lg:flex  navFont menu2">
+                        <a href="#home" class="text-xl font-semibold leading-6 ">Home</a>
+                        <a href="#skill" class="text-xl font-semibold leading-6 ">Skills</a>
+                        <a href="#education" class="text-xl font-semibold leading-6 ">Education</a>
+                        <a href="#certificate" class="text-xl font-semibold leading-6 ">Certificate</a>
+                        <a href="#project" class="text-xl font-semibold leading-6 ">Projects</a>
+                        <a href="#contact" class="text-xl font-semibold leading-6 ">Contact</a>
+                        <button class="text-2xl leading-6 " id="toggle-button"><i
+                                class="fa-regular fa-moon"></i></button>
+
+                    </div>
+                </nav>
+
+                <!-- Mobile Screen -->
+                <div id="mobileMenu" class="lg:hidden hidden" role="dialog" aria-modal="true">
+                    <div class="fixed inset-0 z-50"></div>
+                    <div
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Your Company</span>
+                                <img class="h-28 w-auto" src="logo.png" alt="">
+                            </a>
+                            <!-- CloseMenu -->
+                            <button type="button" id="closeMenuButton" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                <span class="sr-only">Close menu</span>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="#home"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                                    <a href="#skill"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Skills</a>
+                                    <a href="#education"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Education</a>
+                                    <a href="#Certificate"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Certificate</a>
+                                    <a href="#project"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Projects</a>
+                                    <a href="#contact"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="relative isolate px-6 pt-14 lg:px-8 grid lg:grid-cols-2 sm:grid-cols-1 ">
+                <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                    aria-hidden="true">
+                    <div class="relative left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/7 rotate-[20deg] bg-gradient-to-tr from-[#86198f] to-[#38bdf8] opacity-60 sm:left-[calc(40%-30rem)] sm:w-[92.1875rem]"
+                        style="clip-path: polygon(34.1% 44.1%, 90% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 64.1%)">
+                    </div>
+                </div>
+                <div class="mx-auto max-w-3xl  py-32 sm:py-48 lg:py-56  " data-aos="zoom-out-down"
+                    data-aos-duration="1500">
+                    <div class="text-center  h-96">
+                        <h3 class="text-2xl">Hello! I Am,</h3>
+                        <h1 class="text-4xl font-bold tracking-tight  sm:text-6xl">Full Stack Developer
+                        </h1>
+
+                        <p class="mt-6 text-lg leading-8">Adept at building robust web applications, I
+                            specialize in both front-end and back-end technologies. With a strong foundation in React
+                            and
+                            Tailwind CSS, I create seamless and responsive user experiences..</p>
+                        <div class="mt-10 flex items-center justify-center gap-x-6 resumeBorder">
+                            <a href="https://drive.google.com/file/d/1nbKAuhl_xHvRU4g3cFHGFzDCAcPGTD9n/view?usp=drive_link"
+                                class="rounded-lg border  px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:border-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ">View
+                                Resume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" hidden sm:block  sm:py-48 pl-32 mt-20  flex justify-end">
+                    <div class=" box border border-slate-300 hover:border-slate-400 ">
+                        <div class="content">
+                            <img src="https://images.unsplash.com/photo-1578910555658-62541451bace?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJ1c3NpYW4lMjBnaXJsfGVufDB8fDB8fHww"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                    aria-hidden="true">
+                    <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Section  -->
+
+    <section id="skill" class=" relative isolated container mx-auto border-b-4 border-solid border-black pb-2 ">
+        <div>
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#7e22ce] to-[#059669] opacity-50 sm:left-[calc(80%-30rem)] sm:w-[72.1875rem]"
+                    style="clip-path: polygon(54.1% 44.1%, 90% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 50.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-6 " data-aos="fade-up-right"
+            data-aos-duration="1800">
+            <div class="col-span-1">
+                <h1 class="text-xl ml-5 font-semibold  sm:text-4xl m-6">Skills</h1>
+                <p class="indent-8 ml-3 break-all text-lg leading-8 ">I am inspired by creating great work
+                    with people who are as passionate as I am about building something awesome.A full stack developer
+                    possesses a comprehensive skill set that spans both front-end and back-end development.</p>
+            </div>
+            <div class="col-span-1" data-aos="fade-up" data-aos-duration="1800">
+                <div class="border-b-2 border-black pt-3">
+                    <h1 class="text-xl ml-5 font-semibold  sm:text-2xl m-2">Front End Development</h1>
+                    <p class="indent-8 ml-3 break-all text-lg leading-8  mb-6">Frontend development skills
+                        include proficiency in HTML, CSS, Bootstrap, Tailwind, Material UI, React and JavaScript,
+                        expertise in responsive design, and experience
+                        with frameworks like React.</p>
+                </div>
+                <div>
+                    <h1 class="text-xl ml-5 font-semibold   sm:text-2xl m-3">Back End Development</h1>
+                    <p class="indent-8 ml-3 break-all text-lg leading-8 ">Backend development skills
+                        include proficiency in server-side languages such as Node.js, Express JS, JavaScript with
+                        databases like MySQL and MongoDB, and expertise in creating and integrating RESTful APIs.</p>
+                </div>
+            </div>
+            <div class="" data-aos="fade-up-left" data-aos-duration="1800">
+                <div class="float-end hidden md:block col-span-1">
+                    <img class=" rounded-bl-3xl imgSkill "
+                        src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGV2ZWxvcGVyJTIwd29ya2luZ3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Error">
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class=" relative isolated container mx-auto border-b-2 border-black ">
+        <div>
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ca8a04] to-[#f43f5e] opacity-60 sm:left-[calc(60%-30rem)] sm:w-[72.1875rem]"
+                    style="clip-path: polygon(74.1% 84.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 8.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 92.4% 58.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 70%, 27.6% 76.8%, 56.1% 77.7%, 44.1% 44.1%)">
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="..." data-aos="zoom-in-down" data-aos-duration="1800">
+                <h1 class="text-xl ml-5 font-semibold   sm:text-4xl m-6">Education</h1>
+                <p class="indent-8 ml-3 break-all text-lg leading-8 ">All my life I have been driven by my
+                    strong belief that education is important. I try to learn something new every single day.</p>
+            </div>
+            <div class="col-span-2" data-aos="zoom-in-up" data-aos-duration="1800">
+                <div class=" pt-3">
+                    <h1 class="text-xl ml-5 font-semibold  sm:text-2xl m-2">Bachelor of Computer
+                        Applications</h1>
+                    <div>
+                        <span class="ml-6  text-lg leading-8 ">Allahabad University</span>
+                    </div>
+                    <div>
+                        <span class="ml-6  text-lg leading-8 ">2020 - 2023</span>
+                    </div>
+                </div>
+
+                <div class=" pt-3">
+                    <h1 class="text-xl ml-5 font-semibold   sm:text-2xl m-2">Senior Secondary &#40; XII &#41;</h1>
+                    <div>
+                        <span class="ml-6  text-lg leading-8 ">UP Board</span>
+                    </div>
+                    <div>
+                        <span class="ml-6  text-lg leading-8 ">Year of Completion 2020</span>
+                    </div>
+                </div>
+                <div class=" pt-3 pb-6">
+                    <h1 class="text-xl ml-5 font-semibold   sm:text-2xl m-2"> Secondary &#40; X &#41;</h1>
+                    <div>
+                        <span class="ml-6  text-lg leading-8 ">CBSE Board</span>
+                    </div>
+                    <div>
+                        <span class="ml-6  text-lg leading-8 ">Year of Completion 2017</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+
+    <section id="Certificate" class=" relative isolated container mx-auto pt-6 border-b-2 border-black">
+        <div>
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/7 rotate-[20deg] bg-gradient-to-tr from-[#fbbf24] to-[#38bdf8] opacity-60 sm:left-[calc(40%-30rem)] sm:w-[92.1875rem]"
+                    style="clip-path: polygon(34.1% 44.1%, 90% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 50.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 64.1%)">
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="..." data-aos="zoom-in-left" data-aos-duration="1500">
+                <h1 class="text-xl ml-5 font-semibold   sm:text-4xl m-6">Certification</h1>
+                <p class="indent-8 ml-3 break-all text-lg leading-8 ">This is to certify that Abhishek has successfully
+                    completed the Full Stack Development course from Internshala in collaboration with NSDC. The program
+                    covered essential skills in both front-end and back-end development.</p>
+            </div>
+            <div class="col-span-2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1800">
+                <div class=" pt-3">
+                    <h1 class="text-xl ml-5 font-semibold  sm:text-2xl m-2">Full Stack Developer </h1>
+                    <div class="ml-5">
+                        <a href="https://trainings.internshala.com/view_certificate/fyp689qwna5/icwzj1qwtjd/">View
+                            Certificate</a>
+                    </div>
+                </div>
+                <div class=" pt-3">
+                    <h1 class="text-xl ml-5 font-semibold  sm:text-2xl m-2">Back-End Developer </h1>
+                    <div class="ml-5">
+                        <a href="https://trainings.internshala.com/view_certificate/brk2ojadvjp/gy631d56seq/">View
+                            Certificate</a>
+                    </div>
+                </div>
+                <div class=" pt-3">
+                    <h1 class="text-xl ml-5 font-semibold  sm:text-2xl m-2">Front-End Developer </h1>
+                    <div class="ml-5">
+                        <a href="https://trainings.internshala.com/view_certificate/jd5gm5v9o16/g9erfo83bd8/">View
+                            Certificate</a>
+                    </div>
+                </div>
+                <div class=" pt-3">
+                    <h1 class="text-xl ml-5 font-semibold  sm:text-2xl m-2">General Aptitude </h1>
+                    <div class="ml-5">
+                        <a href="https://trainings.internshala.com/view_certificate/3csokmw1b2s/jn90kvu3nd3/">View
+                            Certificate</a>
+                    </div>
+                </div>
+                <div class=" pt-3">
+                    <h1 class="text-xl ml-5 font-semibold  sm:text-2xl m-2">N.S.D.C </h1>
+                    <div class="ml-5">
+                        <a
+                            href="https://media.licdn.com/dms/image/D5622AQHXeDKJi_Vd6w/feedshare-shrink_1280/0/1709213861469?e=1719446400&v=beta&t=5CU-ElVZoJPhn2ubFaCaHYY4IfQvIefzsbAAAqRG_vE">View
+                            Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div class="relative left-[calc(80%+3rem)] aspect-[1155/678] w-[86.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#a21caf] to-[#4b5563] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+
+
+    <!-- Contact Us -->
+
+    <section id="contact" class=" relative isolated container mx-auto pt-6 ">
+        <div>
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/7 rotate-[20deg] bg-gradient-to-tr from-[#f59e0b] to-[#991b1b] opacity-60 sm:left-[calc(40%-30rem)] sm:w-[92.1875rem]"
+                    style="clip-path: polygon(34.1% 44.1%, 90% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 50.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 64.1%)">
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="..." data-aos="fade-right" data-aos-duration="1500">
+                <h1 class="text-xl ml-5 font-semibold   sm:text-4xl m-6">Contact US</h1>
+                <p class="indent-8 ml-3 break-all text-lg leading-8 ">Are you working on something great? I would love
+                    to help make it happen! Drop me a letter and start your project right now! Just do it.</p>
+            </div>
+            <div class="col-span-2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1800">
+                  <form action="https://api.web3forms.com/submit" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20" id="contactForm">
+                    <input type="hidden" name="access_key" value="4a67a7ab-decf-40f6-b3ce-473dd753d0a0">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                      <div>
+                        <label for="first-name" class="block text-lg font-semibold leading-6 ">First name</label>
+                        <div class="mt-2.5">
+                          <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
+                        </div>
+                      </div>
+                      <div>
+                        <label for="last-name" class="block text-lg font-semibold leading-6 ">Last name</label>
+                        <div class="mt-2.5">
+                          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
+                        </div>
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label for="email" class="block text-lg font-semibold leading-6 ">Email</label>
+                        <div class="mt-2.5">
+                          <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
+                        </div>
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label for="message" class="block text-lg font-semibold leading-6 ">Message</label>
+                        <div class="mt-2.5">
+                          <textarea name="message" id="message" rows="3" class="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required></textarea>
+                        </div>
+                      </div>
+                      <div class="flex gap-x-4 sm:col-span-2">
+                      </div>
+                    </div>
+                    <div class="mt-10">
+                      <button type="submit" class="block w-full rounded-md border border-black px-3.5 py-2.5 text-center text-lg font-semibold  shadow-sm hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+                    </div>
+                  </form>
+
+            </div>
+        </div>
+        </div>
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div class="relative left-[calc(80%+3rem)] aspect-[1155/678] w-[86.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#a21caf] to-[#4b5563] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
